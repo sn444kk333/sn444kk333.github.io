@@ -5,19 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>$nakee</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./img/snakelogo.png" type="image/png">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="icon" href="./assets/img/snakelogo.png" type="image/png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="container">
     <div class="logo-container" id="logoContainer">
-        <img src="./img/snakelogo.png" alt="Snake Logo" width="150px" height="150px">
+        <img src="./assets/img/snakelogo.png" alt="Snake Logo" width="150px" height="150px">
     </div>
         <h1 id="titulo"></h1>
-        <button id="entrarBtn">Entrar</button>
+        <button id="entrarBtn"><i class="fas fa-cog"></i> - Entrar</button>
+        <script>
+            var boton = document.getElementById("entrarBtn");
+    
+            // Agrega la clase fa-spin cuando el cursor está sobre el botón
+            boton.addEventListener("mouseenter", function() {
+                var icono = boton.querySelector("i");
+                icono.classList.add("fa-spin");
+            });
+    
+            // Remueve la clase fa-spin cuando el cursor sale del botón
+            boton.addEventListener("mouseleave", function() {
+                var icono = boton.querySelector("i");
+                icono.classList.remove("fa-spin");
+            });
+        </script>
+
+        <button id="discord">
+            <a href="https://discord.gg/FAgCmUjpym">
+                <i class="fab fa-discord"></i> - Discord Server
+            </a>
+        </button>
         <div class="loader"></div> <!-- Elemento de la barra de carga -->
     </div>
-    <script src="script.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
