@@ -178,3 +178,22 @@ hr {
 	height: 2px;
 	border-radius: 8px;
 }
+
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 12px !important; /* Ajusta el tamaño del texto para dispositivos móviles */
+  }
+  p {
+    font-size: 12px !important; /* Ajusta el tamaño del texto para dispositivos móviles */
+  }
+
+  button {
+    font-size: 14px !important;
+    margin: 2px;
+    padding: 5px; /* Puedes ajustar el espacio alrededor del contenido para dispositivos móviles */
+  }
+  
+  a {
+    font-size: 14px !important;
+  }
+}
